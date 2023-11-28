@@ -21,15 +21,12 @@ class PasswordsActivity : AppCompatActivity() {
         recyclerViewPasswords = findViewById(R.id.recyclerViewPasswords)
         recyclerViewPasswords.layoutManager = LinearLayoutManager(this)
 
-        // Aquí deberías obtener tu lista de contraseñas desde la base de datos
         val dataListFromDatabase: List<PasswordItem> = obtainPasswordsFromDatabase()
 
-        // Configuración del adaptador con la lista de contraseñas y asignación al RecyclerView
         adapter = PasswordsAdapter(dataListFromDatabase)
         recyclerViewPasswords.adapter = adapter
     }
 
-    // Este método simulado obtiene la lista de contraseñas de tu base de datos
     private fun obtainPasswordsFromDatabase(): List<PasswordItem> {
         // Aquí deberías implementar la lógica para obtener los datos de la base de datos y devolverlos
         // Por ejemplo:
@@ -40,9 +37,9 @@ class PasswordsActivity : AppCompatActivity() {
         return emptyList()
     }
 
+
     inner class PasswordsAdapter(private val dataList: List<PasswordItem>) : RecyclerView.Adapter<PasswordsAdapter.ViewHolder>() {
 
-        // ViewHolder que representa cada elemento en la lista
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             val usernameTextView: TextView = itemView.findViewById(R.id.usernameTextView)
             val passwordTextView: TextView = itemView.findViewById(R.id.passwordTextView)
