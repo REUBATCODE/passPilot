@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
         val image = findViewById<ImageView>(R.id.imageView)
         image.setOnClickListener{
             Toast.makeText(this, "Imagen tocada", Toast.LENGTH_SHORT).show()
-            var i = Intent(this, MainActivity::class.java)
+            var i = Intent(this, AuthActivity::class.java)
             startActivity(i)
             finish()
         }
