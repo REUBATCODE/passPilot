@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginFragment">
+    tools:context=".LoginFragment"
+    android:background="@color/background">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -16,8 +17,8 @@
 
         />
     <ImageView
-        android:layout_width="196dp"
-        android:layout_height="130dp"
+        android:layout_width="294dp"
+        android:layout_height="195dp"
         android:src="@drawable/passpilot"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/guideLine"
@@ -60,8 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
-        android:textColor="@color/black"
-        android:hint="Email"
+        android:textColor="@color/text"
 
         />
 
@@ -88,12 +88,11 @@
         android:inputType="textPassword"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/text"
         app:layout_constraintTop_toBottomOf="@id/lblPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
-        android:hint="Password"
         />
 
     <Button
@@ -106,6 +105,8 @@
         android:layout_marginTop="36dp"
         android:text="Login"
         android:textStyle="bold"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/text"
         />
 
 

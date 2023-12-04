@@ -29,8 +29,19 @@ class FreddyFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_freddy, container, false)
+        //val viewPass = inflater.inflate(R.layout.item_password, container, false)
         val fab = view.findViewById<FloatingActionButton>(R.id.fab_new)
         var recyclerView = view.findViewById<RecyclerView>(R.id.infoRecycler)
+
+        //val editNombre = viewPass.findViewById<EditText>(R.id.txtItemUser)
+
+        /*editNombre.setOnClickListener(){
+            val bsd = BottomSheetDialog(view.context)
+            val parentView:View=layoutInflater.inflate(R.layout.bsd_show_password, null)
+            bsd.setContentView(parentView)
+            bsd.show()
+        }
+        */
 
         fab.setOnClickListener(){
             val bsd = BottomSheetDialog(view.context)
@@ -61,8 +72,8 @@ class FreddyFragment : Fragment() {
                 recyclerView.adapter?.notifyDataSetChanged()
                 bsd.dismiss()
             }
-
         }
+
 
 
     initData()
