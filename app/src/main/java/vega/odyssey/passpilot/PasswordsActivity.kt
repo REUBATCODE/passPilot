@@ -28,12 +28,6 @@ class PasswordsActivity : AppCompatActivity() {
     }
 
     private fun obtainPasswordsFromDatabase(): List<PasswordItem> {
-        // Aquí deberías implementar la lógica para obtener los datos de la base de datos y devolverlos
-        // Por ejemplo:
-        // val passwordsList: List<PasswordItem> = databaseHandler.getAllPasswords()
-        // return passwordsList
-
-        // En este ejemplo simulado, retornamos una lista vacía
         return emptyList()
     }
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
+
+    <FrameLayout
+        android:layout_width="100sp"
+        android:layout_height="25sp"
+        android:layout_marginStart="142dp"
+        android:background="@drawable/baseline_minimize_24"
+
+        />
+
+    <EditText
+        android:id="@+id/bsdTxtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:inputType="number"
+        android:hint="ID"/>
+
+    <EditText
+        android:id="@+id/bsdTxtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:inputType="text"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/bsdTxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:inputType="text"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/bsdTxtSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:inputType="text"
+        android:hint="Site" />
+
+    <EditText
+        android:id="@+id/bsdImgSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:inputType="text"
+        android:hint="Image URL" />
+
+    <Button
+        android:id="@+id/bsdBtnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="SAVE 🏳️‍⚧️"
+        android:backgroundTint="@color/black"
+        />
+
+
+</LinearLayout>

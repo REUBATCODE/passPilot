@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#EE6C4D</color>
+    <color name="button">#E0FBFC</color>
+    <color name="text">#293241</color>
+    <color name="buttonSombreado">#98C1D9</color>
 </resources>

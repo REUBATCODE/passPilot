@@ -32,10 +32,9 @@ class LoginFragment : Fragment() {
                 val pass = password.text.toString()
 
                 if(checkUser(email,pass,users)){
-                    //val i = Intent(view.context,MainActivity::class.java)
-                    //startActivity(i)
-                    val navController : NavController = Navigation.findNavController(view)
-                    navController.navigate(R.id.action_loginFragment_to_fastFragment)
+                    val i = Intent(view.context,MainActivity::class.java)
+                    startActivity(i)
+
 
                 }else{
                     Toast.makeText(context,
